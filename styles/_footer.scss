@@ -2,6 +2,7 @@
 @import "./global";
 
 footer {
+    margin-top: 60px;
     .footer-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));

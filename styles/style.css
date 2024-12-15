@@ -408,6 +408,9 @@ header .header-right #menu-btn {
   transition: all 0.5s ease;
 }
 
+footer {
+  margin-top: 60px;
+}
 footer .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
