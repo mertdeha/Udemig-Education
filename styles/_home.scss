@@ -1,0 +1,62 @@
+@import "./variables";
+
+#home {
+    position: relative;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/group.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+
+    .home-text {
+        margin-top: 200px;
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $main-color;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+    h1 {
+        font-size: $h1-font;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 35px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        color: $gray;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-text {
+        margin-top: unset;
+        float: left;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $main-color;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+    h1 {
+        font-size: 60px !important;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: $p-font !important;
+        font-weight: 400;
+        color: $gray;
+        margin-bottom: 20px;
+    }
+}

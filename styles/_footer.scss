@@ -1,0 +1,60 @@
+@import "./variables";
+@import "./global";
+
+footer {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        margin-left: 30px;
+        justify-content: space-around;
+
+        .footer-box {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 20px;
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            a {
+                color: $gray;
+                font-size: 15px;
+                margin-bottom: 6px;
+                @extend .transition;
+                &:hover {
+                    color: $text-color;
+                    transform: translateX(5px);
+                }
+            }
+            .social a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                background-color: #202020;
+                border-radius: 50%;
+                color: $text-color;
+                font-size: 20px;
+                margin-right: 8px;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: $bg-color;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 20px;
+        color: #979797;
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
